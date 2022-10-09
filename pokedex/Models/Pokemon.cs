@@ -13,11 +13,11 @@ namespace pokedex.Models
 
         [StringLength(30)]
         [Required(ErrorMessage = "Preencha o tipo do Pokemon !")]
-        [Display(Name = "Tipo")]
+        [Display(Name = "Nome do Pokemon")]
         public string tipo { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:N1}")]
-        [Display(Name = "Pegar")]
+        [Display(Name = "Pegar por:")]
         public float compra { get; set; }
 
         [DisplayFormat(DataFormatString = "{0:N1}")]
